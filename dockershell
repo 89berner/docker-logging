@@ -1,0 +1,3 @@
+#!/bin/sh
+SHELLUSER=$(whoami)
+sudo /bin/rootsh -u nobody sudo runas SHELLUSER docker_shell
