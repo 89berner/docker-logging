@@ -11,3 +11,5 @@ Add permissions in line 682 as the third argument
 ./configure --disable-logfile 
 make
 make install
+
+mv dockershell /bin/dockershell
