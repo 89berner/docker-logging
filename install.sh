@@ -27,3 +27,5 @@ mv dockerrun /bin/dockerrun
 docker build .
 
 docker build -t docker_shell .
+
+limited:x:1002:1002::/home/limited:/bin/bash
