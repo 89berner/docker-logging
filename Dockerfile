@@ -9,8 +9,6 @@ RUN apt-get update -y
 RUN apt-get upgrade -y
 RUN apt-get dist-upgrade -y
 
-RUN apt-get install -y openssh-server && apt-get install -y curl
-
-RUN chmod 600 /root/.ssh/id_rsa
+RUN apt-get install -y openssh-server
 
 RUN /usr/sbin/useradd 89berner -s /bin/bash
