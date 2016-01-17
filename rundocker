@@ -1,3 +1,3 @@
 #!/bin/bash
 USER=$1
-docker run --name $1_$RANDOM -u $1 -i -t docker_shell /bin/bash
+docker run -v /dev/log:/dev/log --name $1_$RANDOM -u $USER -i -t docker_shell /bin/bash
