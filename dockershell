@@ -1,3 +1,3 @@
 #!/bin/sh
 SHELLUSER=$(whoami)
-sudo /usr/local/bin/rootsh -u nobody sudo runas SHELLUSER docker_shell
+sudo /usr/local/bin/rootsh -u nobody sudo /bin/rundocker $SHELLUSER
