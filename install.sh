@@ -25,3 +25,5 @@ ALL     ALL=(ALL) NOPASSWD: DOCKERSHELL
 mv dockerrun /bin/dockerrun
 
 docker build .
+
+docker build -t docker_shell .
