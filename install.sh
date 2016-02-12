@@ -23,4 +23,5 @@ sudo mv dockershell /bin/dockershell && sudo chmod 755 /bin/dockershell
 sudo mv rundocker /bin/rundocker && sudo chmod 755 /bin/rundocker
 sudo chmod 440 sudoers && sudo mv sudoers /etc/sudoers
 sudo /usr/sbin/useradd limited -s /bin/bash
+sudo /usr/sbin/useradd exampleuser -s /bin/dockershell
 
