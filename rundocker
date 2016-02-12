@@ -1,3 +1,4 @@
 #!/bin/bash
 USER=$1
-docker run -v /dev/log:/dev/log --name $1$RANDOM -u $USER -i -t docker_shell /bin/bash
+CLEANUSER=${USER//[^a-zA-Z0-9]/}
+docker run -v /dev/log:/dev/log --name $CLEANUSER_$RANDOM -u $CLEANUSER -i -t docker_shell /bin/bash
