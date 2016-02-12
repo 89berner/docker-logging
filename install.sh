@@ -1,6 +1,6 @@
 #Getting rootshell:
 sudo apt-get update
-sudo apt-get upgrade
+sudo apt-get upgrade -y
 sudo apt-get install -y build-essential;
 mkdir /tmp/rootshell; cd /tmp/rootshell;
 wget http://tcpdiag.dl.sourceforge.net/project/rootsh/rootsh/1.5.3/rootsh-1.5.3.tar.gz
