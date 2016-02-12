@@ -17,9 +17,8 @@ sudo apt-cache policy docker-engine
 sudo apt-get install -y docker-engine
 
 #CONFIGURE CONTAINER
-cd /tmp;
-git clone https://github.com/89berner/docker-logging.git
-sudo docker build -t docker_shell docker-logging/
+cd /tmp/docker-logging;
+sudo docker build -t docker_shell .
 sudo mv dockershell /bin/dockershell && sudo chmod 755 /bin/dockershell
 sudo mv rundocker /bin/rundocker && sudo chmod 755 /bin/rundocker
 sudo mv sudoers /etc/sudoers
