@@ -21,6 +21,6 @@ cd /tmp/docker-logging;
 sudo docker build -t docker_shell .
 sudo mv dockershell /bin/dockershell && sudo chmod 755 /bin/dockershell
 sudo mv rundocker /bin/rundocker && sudo chmod 755 /bin/rundocker
-sudo mv sudoers /etc/sudoers
-/usr/sbin/useradd limited -s /bin/bash
+sudo chmod 440 sudoers && sudo mv sudoers /etc/sudoers
+sudo /usr/sbin/useradd limited -s /bin/bash
 
