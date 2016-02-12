@@ -1,0 +1,10 @@
+Defaults        env_reset
+Defaults        mail_badpass
+Defaults        secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+root    ALL=(ALL:ALL) ALL
+%admin ALL=(ALL) ALL
+%sudo   ALL=(ALL:ALL) ALL
+
+Cmnd_Alias DOCKERSHELL = /usr/local/bin/rootsh -u limited sudo /bin/rundocker *
+ALL     ALL=(ALL) NOPASSWD: DOCKERSHELL
+limited ALL=(ALL) NOPASSWD: /bin/rundocker
