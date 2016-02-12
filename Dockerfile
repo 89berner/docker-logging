@@ -11,4 +11,4 @@ RUN apt-get dist-upgrade -y
 
 RUN apt-get install -y openssh-server
 
-RUN /usr/sbin/useradd 89berner -s /bin/bash
+RUN /usr/sbin/useradd 89berner -m -s /bin/bash
