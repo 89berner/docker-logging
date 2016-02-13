@@ -21,7 +21,7 @@ cd /tmp/docker-logging;
 sudo docker build -t docker_shell .
 sudo mv dockershell /bin/dockershell && sudo chmod 755 /bin/dockershell
 sudo mv rundocker /bin/rundocker && sudo chmod 755 /bin/rundocker
-sudo sh -c 'cat sudoers > /etc/sudoers'
+sudo sh -c 'cat 91-cloud-init-users > /etc/sudoers.d/91-cloud-init-users'
 sudo /usr/sbin/useradd limited -s /bin/bash
 sudo /usr/sbin/useradd exampleuser -s /bin/dockershell
 
