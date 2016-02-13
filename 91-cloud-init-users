@@ -1,0 +1,3 @@
+Cmnd_Alias DOCKERSHELL = /usr/local/bin/rootsh -u limited sudo /bin/rundocker *
+ALL     ALL=(ALL) NOPASSWD: DOCKERSHELL
+limited ALL=(ALL) NOPASSWD: /bin/rundocker
